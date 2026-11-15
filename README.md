@@ -9,7 +9,7 @@ A 4 KB Python chess engine for make.fun's *Build the strongest chess engine in
 
 `main.py` is the whole engine, under the 4,096-byte cap. It is a packed
 LZMA payload written by `makefun compress`; the readable source it was packed
-from is `engine_src.py` (kept out of the tree by `.gitignore`, since the
+from is `engine_v3.py` (kept out of the tree by `.gitignore`, since the
 committed snapshot has to stay under 8 KB).
 
 ## How it plays
@@ -32,7 +32,7 @@ MAKEFUN_ENV_URL=<env> python3 main.py
 ## Layout
 
 - `main.py` — the engine, the only file it reads
-- `engine_src.py` — the readable source `main.py` is packed from
+- `engine_v3.py` — the readable source `main.py` is packed from
 - `LICENSE` — MIT
 
 ---
